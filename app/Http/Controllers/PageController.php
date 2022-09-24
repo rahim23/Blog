@@ -8,8 +8,8 @@ class PageController extends Controller
 {
 
     public function index(){
-        $title="Welcome to My Blog";
-        return view('pages.index')->with("title",$title) ; 
+       // $title="Welcome to My Blog";
+        return view('pages.index') ; 
     }
     
     public function about(){

@@ -9,18 +9,18 @@ class PageController extends Controller
 
     public function index(){
        // $title="Welcome to My Blog";
-      //  return view('pages.index') ; 
+        return view('Pages.index') ; 
     }
     
     public function about(){
         $title="About Us";      
-        return view('pages.about')->with("title",$title) ; 
+        return view('Pages.about')->with("title",$title) ; 
     }
     
     public function services(){
         $data = array('title'=>'services',
         'services'=>['Programming', 'Seo','Data Analytics'] );
-        return view('pages.services')->with($data) ; 
+        return view('Pages.services')->with($data) ; 
     }
     
 
